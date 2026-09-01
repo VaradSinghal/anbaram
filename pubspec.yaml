@@ -1,0 +1,54 @@
+name: anbaram_admin
+description: "Anbaram Official Admin App — Government donation management."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management
+  flutter_riverpod: ^2.6.1
+
+  # Navigation
+  go_router: ^14.8.0
+
+  # Storage
+  flutter_secure_storage: ^9.2.4
+
+  # Network status
+  connectivity_plus: ^6.1.0
+
+  # Maps (wired up in Phase 1, used in Phase 3)
+  google_maps_flutter: ^2.10.0
+
+  # Environment variables
+  flutter_dotenv: ^5.2.1
+
+  # Typography
+  google_fonts: ^6.2.1
+
+  # UI helpers
+  shimmer: ^3.0.0
+
+  # Formatting / Localisation
+  intl: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - .env

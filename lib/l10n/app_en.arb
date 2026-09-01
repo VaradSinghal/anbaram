@@ -1,0 +1,45 @@
+{
+  "@@locale": "en",
+  "appTitle": "Anbaram",
+  "appTagline": "Compassion in Action",
+  "officialPortal": "Official Admin Portal",
+
+  "loginWelcome": "Welcome Back",
+  "loginSubtitle": "Sign in to continue managing centres",
+  "loginEmail": "Email Address",
+  "loginPassword": "Password",
+  "loginSignIn": "Sign In",
+  "loginInvalidCredentials": "Invalid email or password. Please try again.",
+  "loginDemoCredentials": "Demo: admin@anbaram.gov.in / anbaram2024",
+
+  "homeGreeting": "Good {timeOfDay}, {name}!",
+  "@homeGreeting": {
+    "placeholders": {
+      "timeOfDay": { "type": "String" },
+      "name": { "type": "String" }
+    }
+  },
+  "todaysDonations": "Today's Donations",
+  "criticalCentres": "Critical Centres",
+  "pendingNeeds": "Pending Needs",
+  "mapDashboard": "Map Dashboard",
+  "needsOverview": "Needs Overview",
+  "recentActivity": "Recent Activity",
+  "viewAll": "View All",
+
+  "stateAdmin": "State Admin",
+  "districtOfficer": "District Officer",
+  "centreManager": "Centre Manager",
+
+  "wellStocked": "Well Stocked",
+  "lowStock": "Low Stock",
+  "criticalStock": "Critical",
+
+  "loading": "Loading...",
+  "retry": "Retry",
+  "somethingWentWrong": "Something went wrong",
+  "offlineMessage": "You're offline — changes will sync when connection returns",
+  "noData": "No data available",
+  "signOut": "Sign Out",
+  "settings": "Settings"
+}

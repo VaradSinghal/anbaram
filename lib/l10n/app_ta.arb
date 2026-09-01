@@ -1,0 +1,45 @@
+{
+  "@@locale": "ta",
+  "appTitle": "அன்பரம்",
+  "appTagline": "இரக்கம் செயலில்",
+  "officialPortal": "அதிகாரி நிர்வாக போர்டல்",
+
+  "loginWelcome": "மீண்டும் வரவேற்கிறோம்",
+  "loginSubtitle": "மையங்களை நிர்வகிக்க உள்நுழையவும்",
+  "loginEmail": "மின்னஞ்சல் முகவரி",
+  "loginPassword": "கடவுச்சொல்",
+  "loginSignIn": "உள்நுழை",
+  "loginInvalidCredentials": "தவறான மின்னஞ்சல் அல்லது கடவுச்சொல். மீண்டும் முயற்சிக்கவும்.",
+  "loginDemoCredentials": "டெமோ: admin@anbaram.gov.in / anbaram2024",
+
+  "homeGreeting": "நல்ல {timeOfDay}, {name}!",
+  "@homeGreeting": {
+    "placeholders": {
+      "timeOfDay": { "type": "String" },
+      "name": { "type": "String" }
+    }
+  },
+  "todaysDonations": "இன்றைய நன்கொடைகள்",
+  "criticalCentres": "அவசர மையங்கள்",
+  "pendingNeeds": "நிலுவையில் உள்ள தேவைகள்",
+  "mapDashboard": "வரைபட டாஷ்போர்ட்",
+  "needsOverview": "தேவைகள் கண்ணோட்டம்",
+  "recentActivity": "சமீபத்திய செயல்பாடு",
+  "viewAll": "அனைத்தையும் காண",
+
+  "stateAdmin": "மாநில நிர்வாகி",
+  "districtOfficer": "மாவட்ட அதிகாரி",
+  "centreManager": "மைய மேலாளர்",
+
+  "wellStocked": "நிறைந்த இருப்பு",
+  "lowStock": "குறைந்த இருப்பு",
+  "criticalStock": "அவசரம்",
+
+  "loading": "ஏற்றுகிறது...",
+  "retry": "மீண்டும் முயற்சி",
+  "somethingWentWrong": "ஏதோ தவறு ஏற்பட்டது",
+  "offlineMessage": "நீங்கள் ஆஃப்லைனில் உள்ளீர்கள் — இணைப்பு திரும்பும்போது மாற்றங்கள் ஒத்திசைக்கப்படும்",
+  "noData": "தரவு இல்லை",
+  "signOut": "வெளியேறு",
+  "settings": "அமைப்புகள்"
+}
