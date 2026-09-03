@@ -10,6 +10,8 @@ import 'package:anbaram_admin/screens/map/centre_detail_screen.dart';
 import 'package:anbaram_admin/screens/needs/needs_overview_screen.dart';
 import 'package:anbaram_admin/screens/settings/settings_screen.dart';
 import 'package:anbaram_admin/screens/analytics/analytics_screen.dart';
+import 'package:anbaram_admin/screens/tracking/tracking_dashboard_screen.dart';
+import 'package:anbaram_admin/screens/tracking/item_timeline_screen.dart';
 
 /// Single [GoRouter] instance — created once, never recreated.
 final routerProvider = Provider<GoRouter>((ref) {
@@ -136,6 +138,42 @@ final routerProvider = Provider<GoRouter>((ref) {
         pageBuilder: (context, state) => CustomTransitionPage(
           key: state.pageKey,
           child: const AnalyticsScreen(),
+          transitionsBuilder: (context, animation, _, child) {
+            final slide = Tween<Offset>(
+              begin: const Offset(1, 0),
+              end: Offset.zero,
+            ).animate(CurvedAnimation(
+              parent: animation,
+              curve: Curves.easeOutCubic,
+            ));
+            return SlideTransition(position: slide, child: child);
+          },
+          transitionDuration: const Duration(milliseconds: 350),
+        ),
+      ),
+      GoRoute(
+        path: '/tracking',
+        pageBuilder: (context, state) => CustomTransitionPage(
+          key: state.pageKey,
+          child: const TrackingDashboardScreen(),
+          transitionsBuilder: (context, animation, _, child) {
+            final slide = Tween<Offset>(
+              begin: const Offset(1, 0),
+              end: Offset.zero,
+            ).animate(CurvedAnimation(
+              parent: animation,
+              curve: Curves.easeOutCubic,
+            ));
+            return SlideTransition(position: slide, child: child);
+          },
+          transitionDuration: const Duration(milliseconds: 350),
+        ),
+      ),
+      GoRoute(
+        path: '/tracking/:id',
+        pageBuilder: (context, state) => CustomTransitionPage(
+          key: state.pageKey,
+          child: ItemTimelineScreen(itemId: state.pathParameters['id']!),
           transitionsBuilder: (context, animation, _, child) {
             final slide = Tween<Offset>(
               begin: const Offset(1, 0),

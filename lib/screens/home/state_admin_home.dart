@@ -84,6 +84,13 @@ class _StateAdminHomeState extends ConsumerState<StateAdminHome> {
                     subtitle: 'View overall impact and statistics',
                     onTap: () => context.go('/analytics'),
                   ),
+                  const SizedBox(height: 12),
+                  _buildQuickAction(
+                    icon: Icons.local_shipping_outlined,
+                    title: 'Logistics & Tracking',
+                    subtitle: 'Track donations to distribution',
+                    onTap: () => context.go('/tracking'),
+                  ),
                   const SizedBox(height: 28),
 
                   // ── Recent activity ──────────────────
